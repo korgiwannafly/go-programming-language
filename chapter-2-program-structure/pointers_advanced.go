@@ -25,7 +25,7 @@ func incr(p *int) int {
 
 	*p++ // increments what p points to; does not change p
 
-	fmt.Println("p = ", p)
-	fmt.Println("*p = ", *p)
+	fmt.Println("p = ", p)   // print address of variable p
+	fmt.Println("*p = ", *p) // *p is value of address p
 	return *p
 }
