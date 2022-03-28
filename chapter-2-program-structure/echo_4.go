@@ -18,3 +18,6 @@ func main() {
 		fmt.Println()
 	}
 }
+
+// go run chapter-2-program-structure/echo_4.go -help
+// go run chapter-2-program-structure/echo_4.go -s / abc def
