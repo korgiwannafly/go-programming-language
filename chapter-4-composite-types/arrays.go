@@ -2,6 +2,15 @@ package main
 
 import "fmt"
 
+type Currency int
+
+const (
+	USD Currency = iota
+	EUR
+	GBP
+	RMB
+)
+
 func main() {
 	var a [3]int             // array of 3 integers
 	fmt.Println(a[0])        // print the first element
@@ -19,8 +28,11 @@ func main() {
 
 	var q [3]int = [3]int{1, 2, 3}
 	var r [3]int = [3]int{1, 2}
-	fmt.Println(r[2]) // "0"
+	fmt.Println(r[2]) // 0
 
 	q = [...]int{1, 2, 3}
-	fmt.Printf("%T\n", q) // "[3]int"
+	fmt.Printf("%T\n", q) // [3]int
+
+	symbol := [...]string{USD: "$", EUR: "9", GBP: "!", RMB: ""}
+	fmt.Println(EUR, symbol[EUR]) // 1 9
 }
