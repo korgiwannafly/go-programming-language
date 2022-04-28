@@ -12,6 +12,15 @@ func main() {
 	Q2 := months[4:7]
 	summer := months[6:9]
 
+	for _, s := range summer {
+		for _, q := range Q2 {
+			if s == q {
+				fmt.Printf("%s appears in both\n", s)
+			}
+		}
+	}
+
+	// fmt.Println(summer[:20]) // panic: out of range
 	fmt.Println(Q2)
 	fmt.Println(summer)
 }
