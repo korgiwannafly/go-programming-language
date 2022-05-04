@@ -21,6 +21,12 @@ func main() {
 	x := [...]string{"x", "x"}
 	y := [...]string{"y", "y"}
 	fmt.Println(equal(x[:], y[:]))
+
+	// The zero value of a slice type is nil
+	// var t []int    // len(s) == 0, s == nil
+	// t = nil        // len(s) == 0, s == nil
+	// t = []int(nil) // len(s) == 0, s == nil
+	// t = []int{}    // len(s) == 0, s != nil
 }
 
 // reverse reverses a slice of ints in place.
